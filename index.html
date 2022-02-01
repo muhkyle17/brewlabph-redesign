@@ -29,7 +29,7 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- Google Fonts -->
     <link
@@ -39,32 +39,22 @@
   </head>
   <body>
     <!-- Navbar -->
-    <header class="header pt-10">
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100" id="navbar" style="background-color: black;">
-        <a class="navbar-brand" href="index.html">BREW LAB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span> 
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="shop.html">The Shop</a>
-            <div class="btn-group">
-              <a class="nav-item nav-link pr-lg-0 pr-1" href="lab.html">The Lab</a>
-              <a class="nav-item nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="lab.html#bp">Beginner's Page</a>
-                <a class="dropdown-item" href="lab.html#recipes">Recipes</a>
-              </div>
-            </div>
-            <a class="nav-item nav-link" href="about.html">About Us</a>
-            <a class="nav-item nav-link" href="contact.html">Contact Us</a>
-            <a class="nav-item nav-link" href="faq.html">FAQs</a>
-          </div>
+    <section>
+      <nav class="nav">
+        <div class="nav__company-name">
+          <a href="index.html"><p>BREW LAB</p></a>
+        </div>
+        <div>
+          <ul class="nav__bar">
+            <li><a href="shop.html">The Shop</a></li>
+            <li><a href="lab.html">The Lab</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
         </div>
       </nav>
-    </header>
+    </section>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
