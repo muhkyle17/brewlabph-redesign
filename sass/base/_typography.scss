@@ -17,13 +17,13 @@ h4 {
   font-size: 1.5rem;
 
   &--company-name {
-    color: white !important;
+    color: $color-white !important;
     font-size: 2rem;
     font-weight: bolder;
   }
 
   &--company-name:hover {
-    color: #ffc107 !important;
+    color: $color-primary !important;
   }
 
   &__link:link,
@@ -38,11 +38,11 @@ h4 {
 
   &__link:hover,
   &__link:active {
-    color: #ffc107;
+    color: $color-primary;
     padding-bottom: 3px;
     padding-top: 3px;
-    border-bottom: 2px solid #ffc107;
-    border-top: 2px solid #ffc107;
+    border-bottom: 2px solid $color-primary;
+    border-top: 2px solid $color-primary;
   }
 
   &__bar {
