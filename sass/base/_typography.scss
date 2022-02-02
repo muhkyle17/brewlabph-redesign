@@ -1,3 +1,9 @@
+html,
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 62.5%; // 10px
+}
+
 p {
   font-family: 'Poppins', sans-serif;
 }
@@ -8,8 +14,38 @@ h4 {
 }
 
 .nav {
-  font-size: 2rem;
+  font-size: 1.5rem;
 
-  & p {
+  &--company-name {
+    color: white !important;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  &--company-name:hover {
+    color: #ffc107 !important;
+  }
+
+  & a:link,
+  & a:visited {
+    color: #808080;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    transition: border-bottom 0.2s, border-top 0.2s;
+  }
+
+  & a:hover,
+  & a:active {
+    color: #ffc107;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-bottom: 2px solid #ffc107;
+    border-top: 2px solid #ffc107;
+  }
+
+  &__bar {
+    list-style: none;
   }
 }
