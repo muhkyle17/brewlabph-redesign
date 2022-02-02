@@ -26,8 +26,8 @@ h4 {
     color: #ffc107 !important;
   }
 
-  & a:link,
-  & a:visited {
+  &__link:link,
+  &__link:visited {
     color: #808080;
     text-decoration: none;
     text-transform: uppercase;
@@ -36,8 +36,8 @@ h4 {
     transition: border-bottom 0.2s, border-top 0.2s;
   }
 
-  & a:hover,
-  & a:active {
+  &__link:hover,
+  &__link:active {
     color: #ffc107;
     padding-bottom: 3px;
     padding-top: 3px;
@@ -47,5 +47,19 @@ h4 {
 
   &__bar {
     list-style: none;
+  }
+}
+
+.dropdown {
+  //
+
+  &__btn {
+    color: #808080;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    color: #ffc107;
   }
 }

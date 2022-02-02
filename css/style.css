@@ -36,16 +36,14 @@ h4 {
     font-weight: bolder; }
   .nav--company-name:hover {
     color: #ffc107 !important; }
-  .nav a:link,
-  .nav a:visited {
+  .nav__link:link, .nav__link:visited {
     color: #808080;
     text-decoration: none;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
     border-top: 2px solid transparent;
     transition: border-bottom 0.2s, border-top 0.2s; }
-  .nav a:hover,
-  .nav a:active {
+  .nav__link:hover, .nav__link:active {
     color: #ffc107;
     padding-bottom: 3px;
     padding-top: 3px;
@@ -53,6 +51,14 @@ h4 {
     border-top: 2px solid #ffc107; }
   .nav__bar {
     list-style: none; }
+
+.dropdown__btn {
+  color: #808080;
+  font-weight: bolder;
+  cursor: pointer; }
+
+.dropdown__btn:hover {
+  color: #ffc107; }
 
 .nav {
   background-color: black;
@@ -67,9 +73,35 @@ h4 {
   align-items: center; }
   .nav__bar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-content: center;
     width: 45rem; }
-  .nav__bar li {
+  .nav__bar p {
     margin-top: 0.7rem; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  .dropdown__nav--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0.4rem; }
+  .dropdown__content {
+    display: none;
+    position: absolute;
+    top: 3.6rem;
+    background-color: #f9f9f9;
+    min-width: 16rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .dropdown__content a {
+    color: black;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    display: block; }
+  .dropdown__content a:hover {
+    background-color: #f1f1f1; }
+  .dropdown:hover .dropdown__content {
+    display: block; }
