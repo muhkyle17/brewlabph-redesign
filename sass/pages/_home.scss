@@ -29,3 +29,33 @@
     -o-border-radius: 5px;
   }
 }
+
+.banner {
+  @include sectionPadding;
+
+  margin-top: -5.5rem;
+
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__img {
+    min-width: 480px;
+  }
+
+  &__img--bundles {
+    width: 81vw;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  &__img--infographic {
+    width: 90vw;
+    height: auto;
+    margin: 50px auto 0 auto;
+    border-radius: 10px;
+  }
+}
