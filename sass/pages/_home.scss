@@ -59,3 +59,25 @@
     border-radius: 10px;
   }
 }
+
+.flavors {
+  &__title {
+    padding: 1vh 0 0 0;
+    margin-bottom: 2vh;
+    display: block;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    height: 200px;
+    width: 260px;
+    border-radius: 5px;
+    margin: 0px auto 10px auto;
+  }
+}
