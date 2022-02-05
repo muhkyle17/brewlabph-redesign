@@ -1,14 +1,17 @@
 // Abstracts
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 // Base
 @import 'base/base';
 @import 'base/typography';
 
 // Components
+@import 'components/button';
 
 // Layout
 @import 'layout/navigation';
 @import 'layout/header';
 
 // Pages
+@import 'pages/home';

@@ -50,16 +50,18 @@ h4 {
   }
 }
 
-.dropdown {
-  //
-
-  &__btn {
-    color: #808080;
-    font-weight: bolder;
-    cursor: pointer;
+.kits {
+  & h3 {
+    font-size: 3rem;
   }
 
-  &__btn:hover {
-    color: #ffc107;
+  & p {
+    margin-top: 1.2rem;
+    font-size: 1.9rem;
+    margin-bottom: -1.5rem;
+  }
+
+  & small {
+    font-size: 1.4rem;
   }
 }

@@ -1,0 +1,31 @@
+.dropdown {
+  &__btn {
+    color: #808080;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    color: $color-primary;
+  }
+}
+
+.btn--pill {
+  margin-left: 1.5rem;
+  display: inline-block;
+  border: none;
+  background-color: $color-primary;
+  text-decoration: none;
+  margin-top: -8px;
+  padding: 1rem 1.3rem;
+  color: #000;
+  font-size: 1.7rem;
+  border-radius: 50em;
+  box-shadow: 5px 3px 13px #888888;
+  transition: background-color 0.5s;
+
+  &:hover,
+  &:active {
+    background-color: #d4a107;
+  }
+}

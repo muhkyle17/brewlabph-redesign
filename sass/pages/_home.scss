@@ -1,0 +1,31 @@
+.kits {
+  @include sectionPadding;
+
+  &__title {
+    padding: 1vh 0 0 0;
+    margin-bottom: 2vh;
+    display: block;
+    width: 50rem;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  &__img {
+    height: 320px;
+    width: 360px;
+    // margin: 0px auto 10px auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}

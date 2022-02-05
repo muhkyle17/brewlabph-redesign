@@ -12,10 +12,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   box-sizing: border-box;
-}
-
-section {
-  // padding: 80px 35px;
+  scroll-behavior: smooth;
 }
 
 .row {
