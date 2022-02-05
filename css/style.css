@@ -17,6 +17,35 @@ body {
   max-width: 1140px;
   margin: 0 auto; }
 
+.divider {
+  max-width: 1140px;
+  border: 1px solid #e5e5e5ce; }
+
+.container-fluid,
+.container {
+  padding-left: 24px;
+  padding-right: 24px; }
+
+.container-none {
+  width: 1371px;
+  height: 561px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1080px; } }
+
+.container-fluid-bundle {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+@media (max-width: 570px) {
+  .container-fluid-bundle {
+    width: 570px; } }
+
 html,
 body {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -75,6 +104,13 @@ h4 {
 .flavors small {
   font-size: 1.4rem; }
 
+.content h4 {
+  font-size: 2.7rem; }
+
+.content p {
+  font-size: 1.2rem;
+  text-align: center; }
+
 .dropdown__btn {
   color: #808080;
   font-weight: bolder;
@@ -98,6 +134,10 @@ h4 {
   transition: background-color 0.5s; }
   .btn--pill:hover, .btn--pill:active {
     background-color: #d4a107; }
+
+.content .btn--pill {
+  font-size: 2rem;
+  padding: 1rem 2rem; }
 
 .nav {
   background-color: black;
@@ -219,3 +259,28 @@ h4 {
   width: 260px;
   border-radius: 5px;
   margin: 0px auto 10px auto; }
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .content__card {
+    border-radius: 0.3rem;
+    width: 55.5rem;
+    padding: 3rem 3rem;
+    -webkit-box-shadow: 0px 9px 14px -2px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 9px 14px -2px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 9px 14px -2px rgba(0, 0, 0, 0.48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .content__card a {
+      margin-top: 2rem; }
+  .content__beginner {
+    color: #fff;
+    background-color: #000; }
+  .content__connect {
+    border: 1px solid #e4e4e4; }

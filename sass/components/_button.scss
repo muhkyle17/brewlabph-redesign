@@ -29,3 +29,10 @@
     background-color: #d4a107;
   }
 }
+
+.content {
+  & .btn--pill {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+}
