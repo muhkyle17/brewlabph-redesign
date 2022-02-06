@@ -92,3 +92,25 @@ h4 {
     text-align: center;
   }
 }
+
+.footer {
+  & h4 {
+    margin-bottom: 2rem;
+  }
+
+  & a {
+    color: $gray;
+    font-size: 1.4rem;
+
+    &:hover {
+      color: darken($gray, $amount: 100);
+    }
+  }
+
+  &__copyright {
+    & small {
+      color: $gray;
+      font-size: 1.4rem;
+    }
+  }
+}
