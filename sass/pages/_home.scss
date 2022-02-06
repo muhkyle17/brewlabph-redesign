@@ -118,3 +118,19 @@
     border: 1px solid #e4e4e4;
   }
 }
+
+.gifs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+  }
+}
