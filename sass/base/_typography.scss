@@ -98,9 +98,14 @@ h4 {
     margin-bottom: 2rem;
   }
 
+  & li {
+    list-style: none;
+  }
+
   & a {
     color: $gray;
     font-size: 1.4rem;
+    text-decoration: none;
 
     &:hover {
       color: darken($gray, $amount: 100);
