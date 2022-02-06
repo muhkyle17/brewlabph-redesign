@@ -111,6 +111,19 @@ h4 {
   font-size: 1.4rem;
   text-align: center; }
 
+.gifs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; }
+  .gifs__img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    width: 100%; }
+
 .dropdown__btn {
   color: #808080;
   font-weight: bolder;
