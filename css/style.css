@@ -200,6 +200,12 @@ h4 {
   background-position: center bottom;
   text-align: center;
   background-attachment: fixed; }
+  @media only screen and (max-width: 1000px) {
+    .hero {
+      background-size: cover;
+      background-position: center bottom;
+      text-align: center;
+      background-attachment: initial; } }
 
 .hero h1 {
   padding-top: 150px;
