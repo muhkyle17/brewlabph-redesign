@@ -25,10 +25,12 @@ body {
   border: 1px solid #e5e5e5ce;
 }
 
-.container-fluid,
-.container {
-  padding-left: 24px;
-  padding-right: 24px;
+.section-fluid {
+  @include respond(tab-land) {
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 1080px;
+  }
 }
 
 .container-none {
@@ -38,21 +40,4 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-@media (min-width: 1200px) {
-  .container-fluid {
-    max-width: 1080px;
-  }
-}
-
-.container-fluid-bundle {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-@media (max-width: 570px) {
-  .container-fluid-bundle {
-    width: 570px;
-  }
 }

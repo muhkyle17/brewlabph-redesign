@@ -21,10 +21,11 @@ body {
   max-width: 1140px;
   border: 1px solid #e5e5e5ce; }
 
-.container-fluid,
-.container {
-  padding-left: 24px;
-  padding-right: 24px; }
+@media only screen and (max-width: 75em) {
+  .section-fluid {
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 1080px; } }
 
 .container-none {
   width: 1371px;
@@ -33,18 +34,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%; }
-
-@media (min-width: 1200px) {
-  .container-fluid {
-    max-width: 1080px; } }
-
-.container-fluid-bundle {
-  padding-left: 0px;
-  padding-right: 0px; }
-
-@media (max-width: 570px) {
-  .container-fluid-bundle {
-    width: 570px; } }
 
 html,
 body {
@@ -226,12 +215,19 @@ h4 {
     margin-bottom: 2vh;
     display: block;
     width: 50rem; }
+    @media only screen and (max-width: 797px) {
+      .kits__title {
+        margin: 0 auto 2vh auto;
+        max-width: 37rem; } }
   .kits__cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem; }
+    @media only screen and (max-width: 56.26em) {
+      .kits__cards {
+        justify-content: center; } }
   .kits__img {
     height: 320px;
     width: 360px;
@@ -265,13 +261,27 @@ h4 {
 
 .flavors__title {
   margin-bottom: 2vh;
-  display: block; }
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 893px) {
+    .flavors__title {
+      margin: 0 auto 2vh auto;
+      max-width: 56rem; } }
+  @media only screen and (max-width: 494px) {
+    .flavors__title a {
+      display: block;
+      margin-top: 1rem;
+      margin-left: 0; } }
 
 .flavors__cards {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; }
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.3rem; }
+  @media only screen and (max-width: 797px) {
+    .flavors__cards {
+      justify-content: center; } }
 
 .flavors__img {
   height: 200px;
@@ -283,8 +293,11 @@ h4 {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  gap: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .content {
+      justify-content: center; } }
   .content__card {
     border-radius: 0.3rem;
     width: 55.5rem;
@@ -296,8 +309,13 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 587px) {
+      .content__card {
+        width: 90vw; } }
     .content__card a {
       margin-top: 2rem; }
+    .content__card h4 {
+      text-align: center; }
   .content__beginner {
     color: #fff;
     background-color: #000; }
@@ -330,3 +348,6 @@ h4 {
     gap: 2rem; }
   .footer__copyright {
     margin: 0.5rem 0 5rem 0; }
+  @media only screen and (max-width: 797px) {
+    .footer {
+      display: none; } }
