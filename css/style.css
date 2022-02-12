@@ -55,14 +55,17 @@ h4 {
     font-weight: bolder; }
   .nav--company-name:hover {
     color: #ffc107 !important; }
-  .nav__link:link, .nav__link:visited {
+  .nav__link:link, .nav__link:visited,
+  .nav__bar .dropdown p {
     color: #808080;
     text-decoration: none;
+    cursor: pointer;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
     border-top: 2px solid transparent;
     transition: border-bottom 0.2s, border-top 0.2s; }
-  .nav__link:hover, .nav__link:active {
+  .nav__link:hover, .nav__link:active,
+  .nav__bar .dropdown p:hover {
     color: #ffc107;
     padding-bottom: 3px;
     padding-top: 3px;
@@ -162,24 +165,20 @@ h4 {
   .nav__bar {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     width: 45rem; }
-  .nav__bar p {
-    margin-top: 0.7rem; }
 
 .dropdown {
   position: relative;
-  display: inline-block; }
-  .dropdown__nav--button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 0.4rem; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
   .dropdown__content {
     display: none;
     position: absolute;
     top: 3.6rem;
+    left: 0;
     background-color: #f9f9f9;
     min-width: 16rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

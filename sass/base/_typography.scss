@@ -27,9 +27,11 @@ h4 {
   }
 
   &__link:link,
-  &__link:visited {
+  &__link:visited,
+  &__bar .dropdown p {
     color: #808080;
     text-decoration: none;
+    cursor: pointer;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
     border-top: 2px solid transparent;
@@ -37,7 +39,8 @@ h4 {
   }
 
   &__link:hover,
-  &__link:active {
+  &__link:active,
+  &__bar .dropdown p:hover {
     color: $color-primary;
     padding-bottom: 3px;
     padding-top: 3px;
