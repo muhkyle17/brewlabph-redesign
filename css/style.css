@@ -194,6 +194,48 @@ h4 {
   .dropdown:hover .dropdown__content {
     display: block; }
 
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 1.3rem;
+  right: 3rem;
+  cursor: pointer; }
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff; }
+
+@media only screen and (max-width: 75em) {
+  .nav__bar {
+    position: absolute;
+    top: 5.4rem;
+    left: -115%;
+    background-color: #000;
+    z-index: 100;
+    padding-left: 1.7rem;
+    width: 100%;
+    height: 30vh;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around; }
+  .nav__bar.active {
+    left: 0; }
+  .hamburger {
+    display: block; }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0; }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); } }
+
 .hero {
   background-image: url(../../images/hero-brewlab.jpg);
   background-size: cover;
