@@ -408,9 +408,16 @@ h4 {
     #heroabout {
       background-attachment: initial; } }
 
-.container-fluid h1 {
-  padding-top: 150px;
-  font-weight: 600;
-  margin-top: 5rem;
-  height: 90vh;
-  min-height: 650px; }
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .container-fluid {
+    height: 90vh;
+    min-height: 650px; }
+  .container-fluid h1 {
+    font-weight: 600;
+    font-size: 9rem; }
+  .container-fluid h2 {
+    font-size: 3rem;
+    margin-top: 2rem; }

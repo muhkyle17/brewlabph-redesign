@@ -11,11 +11,24 @@
 }
 
 .container-fluid {
-  & h1 {
-    padding-top: 150px;
-    font-weight: 600;
-    margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & {
+    // height: 40vh;
+    // margin-top: 5rem;
     height: 90vh;
     min-height: 650px;
+  }
+
+  & h1 {
+    font-weight: 600;
+    font-size: 9rem;
+  }
+
+  & h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 }
