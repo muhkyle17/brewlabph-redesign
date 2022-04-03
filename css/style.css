@@ -100,6 +100,19 @@ h4 {
   font-size: 1.4rem;
   text-align: center; }
 
+.about-content-header h3 {
+  text-align: center;
+  font-size: 2.8rem;
+  width: 100%; }
+
+.about-content h4 {
+  font-size: 2.7rem;
+  font-weight: 600; }
+
+.about-content p {
+  font-size: 1.4rem;
+  text-align: center; }
+
 .footer h4 {
   margin-bottom: 2rem; }
 
@@ -408,16 +421,49 @@ h4 {
     #heroabout {
       background-attachment: initial; } }
 
-.container-fluid {
+.hero-about {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .container-fluid {
+  .hero-about {
     height: 90vh;
     min-height: 650px; }
-  .container-fluid h1 {
+  .hero-about h1 {
     font-weight: 600;
     font-size: 9rem; }
-  .container-fluid h2 {
+  .hero-about h2 {
     font-size: 3rem;
     margin-top: 2rem; }
+
+.about-content-header {
+  margin-top: 5rem; }
+
+.about-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .about-content {
+      justify-content: center; } }
+  .about-content__card {
+    border-radius: 0.3rem;
+    width: 55.5rem;
+    padding: 3rem 3rem;
+    -webkit-box-shadow: 0px 9px 14px -2px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 9px 14px -2px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 9px 14px -2px rgba(0, 0, 0, 0.48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 587px) {
+      .about-content__card {
+        width: 90vw; } }
+    .about-content__card a {
+      margin-top: 2rem; }
+    .about-content__card h4 {
+      text-align: center; }
+  .about-content__beginner, .about-content__connect {
+    border: 1px solid #e4e4e4; }

@@ -10,7 +10,7 @@
   }
 }
 
-.container-fluid {
+.hero-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,5 +30,53 @@
   & h2 {
     font-size: 3rem;
     margin-top: 2rem;
+  }
+}
+
+.about-content-header {
+  margin-top: 5rem;
+}
+
+.about-content {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  @include respond(tab-land) {
+    justify-content: center;
+  }
+
+  &__card {
+    border-radius: 0.3rem;
+    width: 55.5rem;
+    padding: 3rem 3rem;
+    -webkit-box-shadow: 0px 9px 14px -2px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 9px 14px -2px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 9px 14px -2px rgba(0, 0, 0, 0.48);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 587px) {
+      width: 90vw;
+    }
+
+    & a {
+      margin-top: 2rem;
+    }
+
+    & h4 {
+      text-align: center;
+    }
+  }
+
+  &__beginner,
+  &__connect {
+    border: 1px solid #e4e4e4;
   }
 }
