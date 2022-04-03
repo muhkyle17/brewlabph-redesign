@@ -84,6 +84,15 @@
 .featurette {
   display: flex;
 
+  &__bottle {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &__ingredients {
+    justify-content: space-between;
+  }
+
   &-heading {
     width: 50%;
   }

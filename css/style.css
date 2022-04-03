@@ -477,5 +477,10 @@ h4 {
 
 .featurette {
   display: flex; }
+  .featurette__bottle {
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+  .featurette__ingredients {
+    justify-content: space-between; }
   .featurette-heading {
     width: 50%; }
