@@ -113,6 +113,17 @@ h4 {
   }
 }
 
+.featurette {
+  & h2 {
+    font-size: 3rem;
+  }
+
+  & p {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+}
+
 .footer {
   & h4 {
     margin-bottom: 2rem;

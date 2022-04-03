@@ -113,6 +113,13 @@ h4 {
   font-size: 1.4rem;
   text-align: center; }
 
+.featurette h2 {
+  font-size: 3rem; }
+
+.featurette p {
+  font-size: 2rem;
+  font-weight: 100; }
+
 .footer h4 {
   margin-bottom: 2rem; }
 
@@ -467,3 +474,8 @@ h4 {
       text-align: center; }
   .about-content__beginner, .about-content__connect {
     border: 1px solid #e4e4e4; }
+
+.featurette {
+  display: flex; }
+  .featurette-heading {
+    width: 50%; }
