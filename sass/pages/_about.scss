@@ -84,7 +84,8 @@
 .featurette {
   display: flex;
 
-  &__bottle {
+  &__bottle,
+  &__gif {
     flex-direction: row-reverse;
     justify-content: space-between;
   }

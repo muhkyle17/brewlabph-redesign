@@ -117,8 +117,12 @@ h4 {
   font-size: 3rem; }
 
 .featurette p {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 100; }
+
+.about-close h3 {
+  text-align: center;
+  font-size: 3rem; }
 
 .footer h4 {
   margin-bottom: 2rem; }
@@ -477,7 +481,7 @@ h4 {
 
 .featurette {
   display: flex; }
-  .featurette__bottle {
+  .featurette__bottle, .featurette__gif {
     flex-direction: row-reverse;
     justify-content: space-between; }
   .featurette__ingredients {
